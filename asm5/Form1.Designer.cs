@@ -136,6 +136,7 @@ namespace asm5
             this.lblselect10 = new System.Windows.Forms.Label();
             this.lblselect9 = new System.Windows.Forms.Label();
             this.lblNumLeft = new System.Windows.Forms.Label();
+            this.btnSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -175,6 +176,7 @@ namespace asm5
             this.btn2.TabIndex = 3;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -184,6 +186,7 @@ namespace asm5
             this.btn3.TabIndex = 4;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn5
             // 
@@ -193,6 +196,7 @@ namespace asm5
             this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn4
             // 
@@ -202,6 +206,7 @@ namespace asm5
             this.btn4.TabIndex = 6;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn9
             // 
@@ -211,6 +216,7 @@ namespace asm5
             this.btn9.TabIndex = 11;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn10
             // 
@@ -220,6 +226,7 @@ namespace asm5
             this.btn10.TabIndex = 10;
             this.btn10.Text = "10";
             this.btn10.UseVisualStyleBackColor = true;
+            this.btn10.Click += new System.EventHandler(this.btn10_Click);
             // 
             // btn8
             // 
@@ -229,6 +236,7 @@ namespace asm5
             this.btn8.TabIndex = 9;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -238,6 +246,7 @@ namespace asm5
             this.btn7.TabIndex = 8;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn6
             // 
@@ -247,6 +256,7 @@ namespace asm5
             this.btn6.TabIndex = 7;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn19
             // 
@@ -1141,11 +1151,22 @@ namespace asm5
             this.lblNumLeft.Size = new System.Drawing.Size(165, 36);
             this.lblNumLeft.TabIndex = 106;
             // 
+            // btnSort
+            // 
+            this.btnSort.Location = new System.Drawing.Point(205, 441);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(36, 36);
+            this.btnSort.TabIndex = 107;
+            this.btnSort.Text = "排序";
+            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 844);
+            this.Controls.Add(this.btnSort);
             this.Controls.Add(this.lblNumLeft);
             this.Controls.Add(this.lblselect10);
             this.Controls.Add(this.lblselect9);
@@ -1369,6 +1390,7 @@ namespace asm5
         private System.Windows.Forms.Label lblselect10;
         private System.Windows.Forms.Label lblselect9;
         private System.Windows.Forms.Label lblNumLeft;
+        private System.Windows.Forms.Button btnSort;
     }
 }
 

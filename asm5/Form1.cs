@@ -7,9 +7,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace asm5
 {
+    /*
+     * 尚未完成功能：
+     * 1. 按鍵圖形化
+     * 2. 不同form傳遞資料 OK
+     * 3. 按鍵自動化生成  OK
+     * 4. 再來一場(清除先前選擇、重新產生新兌獎數字) 
+     * 5. 不同獎顯示不同圖片
+     * 6. 將對中的數字變顏色 OK
+     * 
+     * 技術：
+     * 1. 按鈕陣列化，方便使用
+     * 2. 無限迴圈檢查數字有無重複
+     * 3. 利用 combobox.SelectedIndex 控制 for 迴圈數
+     * 4. 利用 bool 控制按鍵是否作用
+     * 5. 按下按鍵後，顯示其他按鍵
+     * 6. 跳出新 form ，並自動生成按鍵
+     * 
+     * 功能：
+     * 1. 下拉式選單，未選擇會跳提醒視窗
+     * 2. 數字按下會改變顏色，再按一下可以取消選擇
+     * 3. 追蹤玩家剩餘數字
+     * 4. 當玩家想超選，會跳提醒視窗
+     * 5. 玩家確定後，鎖住其他按鍵，清除後，解除鎖定
+     * 6. 幫玩家自動選擇全部數字或剩餘數字
+     * 7. 兌獎後，跳出新視窗，並返回上一頁
+     */
+
+    
     //這裡家gobal 也崩潰
     public partial class Form1 : Form
     {
@@ -311,23 +340,24 @@ namespace asm5
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
+            listWin.Sort();
             if (listPlay.Count != comboxStar.SelectedIndex)  
             {
                 MessageBox.Show($"還剩{intNeed}個數字需要選擇");
             }
             else
             {
-                int getCount = 0;
+                List<int> listGet = new List<int>();
 
                 for (int i = 0; i < listPlay.Count; i++)
                 {
                     if (listWin.IndexOf(listPlay[i]) != -1)
                     {
-                        getCount++;
+                        listGet.Add(listPlay[i]);
                     }
 
                 }
-                listWin.Sort();
+                
                 foreach (int myint in listWin)
                 {
                     Console.Write(myint + " ");
@@ -337,22 +367,22 @@ namespace asm5
                 {
                     Console.Write(myint + " ");
                 }
-                Console.WriteLine("中了" + getCount);
+                Console.WriteLine("中了" + listGet.Count);
 
                 //把form1的資料傳到form2 ：在form2寫方法，在form1呼叫方法傳遞變數
                 //顯示中獎號碼，玩家選擇號碼，中了幾個數字(listWin listPlay getCount)
                 //form2 的按鈕物件可以自動產生
-                
+
                 //this.Controls.Add
 
 
 
 
 
-
+                
                 this.Hide(); //隱藏父視窗
                 Form2 form2 = new Form2(); //創建子視窗
-
+                form2.Set(listWin,listPlay,listGet);
                 switch (form2.ShowDialog(this))
                 {
                     case DialogResult.Yes: //Form2中按下ToForm1按鈕

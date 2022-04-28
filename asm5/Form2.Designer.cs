@@ -35,7 +35,7 @@ namespace asm5
             // 
             // btnBackForm1
             // 
-            this.btnBackForm1.Location = new System.Drawing.Point(134, 110);
+            this.btnBackForm1.Location = new System.Drawing.Point(186, 265);
             this.btnBackForm1.Name = "btnBackForm1";
             this.btnBackForm1.Size = new System.Drawing.Size(75, 23);
             this.btnBackForm1.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace asm5
             // lblShowGet
             // 
             this.lblShowGet.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblShowGet.Location = new System.Drawing.Point(27, 41);
+            this.lblShowGet.Location = new System.Drawing.Point(86, 208);
             this.lblShowGet.Name = "lblShowGet";
             this.lblShowGet.Size = new System.Drawing.Size(269, 23);
             this.lblShowGet.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace asm5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 481);
+            this.ClientSize = new System.Drawing.Size(463, 481);
             this.Controls.Add(this.lblShowGet);
             this.Controls.Add(this.btnBackForm1);
             this.Name = "Form2";

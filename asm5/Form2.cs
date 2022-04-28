@@ -14,47 +14,54 @@ namespace asm5
     {
         public Form2()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            Size = new Size();
-            Location = new Point();
-            Label lbl;
-            for (int i = 0; i<20;i++)
-            {
-                lbl  = new Label();
-                lbl.Name = "lbl" + i;
-                lbl.AutoSize = false;
-                lbl.Size =(36, 36);
-                lbl.Location = (10, 10);
-                //lbl.Width = 36;
-                //lbl.Height = 36;
-                //lbl.Left = 10 ;
-                //lbl.Top = 10;
-                //lbl.Left = 30+(i%10)*46;
-                //lbl.Top = 30+(i/10)*46;
-                
-                lbl.Visible = true;
-                this.Controls.Add(lbl);
-                
-                
-            }
-           
 
-
-
-            //label.Text = "xxxxx";
-            
-
-
-            //this.Controls.Add(label);
         }
 
-        public void SetTextBox(string text) //實作一個公開方法，使其他Form可以傳遞資料進來
+
+        public void Set(List<int> mywin, List<int> myplay, List<int> get)
         {
-           lblShowGet.Text = text;
+
+            for (int i = 0; i < 20; i++)
+            {
+                Label lbl = new Label();
+                lbl.Name = "lblWin" + i;
+                lbl.Text = string.Format($"{mywin[i]}");
+                //lbl.Visible = true;
+                lbl.BackColor = Color.Yellow;
+                if (myplay.IndexOf(mywin[i]) != -1)
+                {
+                    lbl.BackColor = Color.Red;
+                }
+                lbl.TextAlign = ContentAlignment.MiddleCenter;
+                lbl.Size = new Size(30, 30);
+                lbl.Location = new Point(30+(i%10)*40, 30+(i/10)*40);
+                Controls.Add(lbl);
+            }
+           
+            for(int i = 0; i < myplay.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.BackColor = Color.Yellow;
+                if (mywin.IndexOf(myplay[i]) != -1)
+                {
+                    lbl.BackColor = Color.Red;
+                }
+                    
+                lbl.Name = "lblPlay" + i;
+                lbl.Text = string.Format($"{myplay[i]}");
+                //lbl.Visible = true;
+                
+                lbl.TextAlign = ContentAlignment.MiddleCenter;
+                lbl.Size = new Size(30, 30);
+                lbl.Location = new Point(30 + (i % 10) * 40, 150);
+                Controls.Add(lbl);
+            }
+            lblShowGet.Text = string.Format($"您中了{get.Count}個!!!");
         }
 
         bool IsToForm1 = false;

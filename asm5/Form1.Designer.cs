@@ -220,6 +220,7 @@ namespace asm5
             // 
             // btn10
             // 
+            this.btn10.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn10.Location = new System.Drawing.Point(415, 95);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(36, 36);

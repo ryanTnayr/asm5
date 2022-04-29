@@ -31,7 +31,6 @@ namespace asm5
         {
             this.btn1 = new System.Windows.Forms.Button();
             this.comboxStar = new System.Windows.Forms.ComboBox();
-            this.comboxRatioBingo = new System.Windows.Forms.ComboBox();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
@@ -137,6 +136,7 @@ namespace asm5
             this.lblselect9 = new System.Windows.Forms.Label();
             this.lblNumLeft = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn1
@@ -158,15 +158,6 @@ namespace asm5
             this.comboxStar.TabIndex = 1;
             this.comboxStar.Text = "--請選擇星數--";
             this.comboxStar.SelectedIndexChanged += new System.EventHandler(this.comboxStar_SelectedIndexChanged);
-            // 
-            // comboxRatioBingo
-            // 
-            this.comboxRatioBingo.FormattingEnabled = true;
-            this.comboxRatioBingo.Location = new System.Drawing.Point(161, 54);
-            this.comboxRatioBingo.Name = "comboxRatioBingo";
-            this.comboxRatioBingo.Size = new System.Drawing.Size(121, 20);
-            this.comboxRatioBingo.TabIndex = 2;
-            this.comboxRatioBingo.Text = "--請選擇倍率--";
             // 
             // btn2
             // 
@@ -220,7 +211,6 @@ namespace asm5
             // 
             // btn10
             // 
-            this.btn10.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn10.Location = new System.Drawing.Point(415, 95);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(36, 36);
@@ -892,7 +882,7 @@ namespace asm5
             // lbl猜大小
             // 
             this.lbl猜大小.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbl猜大小.Location = new System.Drawing.Point(34, 565);
+            this.lbl猜大小.Location = new System.Drawing.Point(34, 650);
             this.lbl猜大小.Name = "lbl猜大小";
             this.lbl猜大小.Size = new System.Drawing.Size(163, 23);
             this.lbl猜大小.TabIndex = 82;
@@ -901,7 +891,7 @@ namespace asm5
             // comboxRatioBigSmall
             // 
             this.comboxRatioBigSmall.FormattingEnabled = true;
-            this.comboxRatioBigSmall.Location = new System.Drawing.Point(330, 600);
+            this.comboxRatioBigSmall.Location = new System.Drawing.Point(330, 685);
             this.comboxRatioBigSmall.Name = "comboxRatioBigSmall";
             this.comboxRatioBigSmall.Size = new System.Drawing.Size(121, 20);
             this.comboxRatioBigSmall.TabIndex = 83;
@@ -910,7 +900,7 @@ namespace asm5
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(76, 591);
+            this.button1.Location = new System.Drawing.Point(76, 676);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(36, 36);
             this.button1.TabIndex = 84;
@@ -920,7 +910,7 @@ namespace asm5
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(34, 591);
+            this.button2.Location = new System.Drawing.Point(34, 676);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(36, 36);
             this.button2.TabIndex = 85;
@@ -930,7 +920,7 @@ namespace asm5
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(34, 640);
+            this.label1.Location = new System.Drawing.Point(34, 725);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 23);
             this.label1.TabIndex = 86;
@@ -938,7 +928,7 @@ namespace asm5
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(34, 665);
+            this.button3.Location = new System.Drawing.Point(34, 750);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(36, 36);
             this.button3.TabIndex = 87;
@@ -947,7 +937,7 @@ namespace asm5
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(76, 665);
+            this.button4.Location = new System.Drawing.Point(76, 750);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(36, 36);
             this.button4.TabIndex = 88;
@@ -956,7 +946,7 @@ namespace asm5
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(119, 665);
+            this.button5.Location = new System.Drawing.Point(119, 750);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(36, 36);
             this.button5.TabIndex = 89;
@@ -965,7 +955,7 @@ namespace asm5
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(203, 666);
+            this.button6.Location = new System.Drawing.Point(203, 751);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(36, 36);
             this.button6.TabIndex = 91;
@@ -974,7 +964,7 @@ namespace asm5
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(161, 666);
+            this.button7.Location = new System.Drawing.Point(161, 751);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(36, 36);
             this.button7.TabIndex = 90;
@@ -984,7 +974,7 @@ namespace asm5
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(330, 675);
+            this.comboBox2.Location = new System.Drawing.Point(330, 760);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 20);
             this.comboBox2.TabIndex = 92;
@@ -1157,7 +1147,7 @@ namespace asm5
             // 
             this.btnCheck.BackColor = System.Drawing.Color.Gold;
             this.btnCheck.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnCheck.Location = new System.Drawing.Point(331, 714);
+            this.btnCheck.Location = new System.Drawing.Point(333, 565);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(120, 36);
             this.btnCheck.TabIndex = 107;
@@ -1166,11 +1156,22 @@ namespace asm5
             this.btnCheck.Visible = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(34, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(417, 23);
+            this.label2.TabIndex = 108;
+            this.label2.Text = "BINGO BINGO";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 773);
+            this.ClientSize = new System.Drawing.Size(497, 614);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.lblNumLeft);
             this.Controls.Add(this.lblselect10);
@@ -1276,7 +1277,6 @@ namespace asm5
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
-            this.Controls.Add(this.comboxRatioBingo);
             this.Controls.Add(this.comboxStar);
             this.Controls.Add(this.btn1);
             this.Name = "Form1";
@@ -1290,7 +1290,6 @@ namespace asm5
 
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.ComboBox comboxStar;
-        private System.Windows.Forms.ComboBox comboxRatioBingo;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn5;
@@ -1396,6 +1395,7 @@ namespace asm5
         private System.Windows.Forms.Label lblselect9;
         private System.Windows.Forms.Label lblNumLeft;
         private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Label label2;
     }
 }
 

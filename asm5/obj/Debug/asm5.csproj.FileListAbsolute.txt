@@ -19,3 +19,14 @@ C:\rt\C#\asm5 - 複製 - 複製\asm5\obj\Debug\asm5.csproj.CoreCompileInputs.cac
 C:\rt\C#\asm5 - 複製 - 複製\asm5\obj\Debug\asm5.exe
 C:\rt\C#\asm5 - 複製 - 複製\asm5\obj\Debug\asm5.pdb
 C:\rt\C#\asm5\asm5\obj\Debug\asm5.Form2.resources
+C:\rt\C#\asm5 - 複製\asm5\bin\Debug\asm5.exe.config
+C:\rt\C#\asm5 - 複製\asm5\bin\Debug\asm5.exe
+C:\rt\C#\asm5 - 複製\asm5\bin\Debug\asm5.pdb
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.csprojAssemblyReference.cache
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.Form1.resources
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.Form2.resources
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.Properties.Resources.resources
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.csproj.GenerateResource.cache
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.csproj.CoreCompileInputs.cache
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.exe
+C:\rt\C#\asm5 - 複製\asm5\obj\Debug\asm5.pdb

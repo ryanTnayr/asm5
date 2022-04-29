@@ -17,7 +17,7 @@ namespace asm5
      * 2. 不同form傳遞資料 OK
      * 3. 按鍵自動化生成  OK
      * 4. 再來一場(清除先前選擇、重新產生新兌獎數字) 
-     * 5. 不同獎顯示不同圖片
+     * 5. 不同獎顯示不同圖片  OK
      * 6. 將對中的數字變顏色 OK
      * 
      * 技術：
@@ -196,7 +196,7 @@ namespace asm5
             }
             else
             {
-                MessageBox.Show("你已按確定鎖定數字，按清除解除鎖定");
+                MessageBox.Show("你已按確定鎖定數字，請解除確定");
             }
             
         }
@@ -204,25 +204,39 @@ namespace asm5
         //確定所選數字 ENTER OK
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            btnCheck.Show();
-            isEnterClick = true;
-            if (listPlay.Count != comboxStar.SelectedIndex)
+            if (btnEnter.Text=="確定")
             {
-                MessageBox.Show($"還剩{intNeed}個數字需要選擇");
+                btnCheck.Show();
+                isEnterClick = true;
+                if (listPlay.Count != comboxStar.SelectedIndex)
+                {
+                    MessageBox.Show($"還剩{intNeed}個數字需要選擇");
+                }
+                else
+                {
+                    listPlay.Sort();
+                    btnEnter.Text = "解除確定";
+                    for (int i = 0; i < comboxStar.SelectedIndex; i++)
+                    {
+                        listselect[i].Show();
+                    }
+                    for (int i = 0; i < comboxStar.SelectedIndex; i++)
+                    {
+                        listselect[i].Text = Convert.ToString(listPlay[i]);
+                    }
+                }
             }
             else
             {
-                listPlay.Sort();
-
+                isEnterClick = false;
+                btnEnter.Text = "確定";
                 for (int i = 0; i < comboxStar.SelectedIndex; i++)
                 {
-                    listselect[i].Show();
-                }
-                for (int i = 0; i < comboxStar.SelectedIndex; i++)
-                {
-                    listselect[i].Text = Convert.ToString(listPlay[i]);
+                    listselect[i].Hide();
                 }
             }
+
+            
         }
 
         //下拉式選單確定剩餘數目 ok
@@ -272,6 +286,7 @@ namespace asm5
         {
             btnCheck.Hide();
             isEnterClick = false;
+            btnEnter.Text = "確定";
             listPlay = new List<int> { } ;       
             intNeed = comboxStar.SelectedIndex;
             lblNumLeft.Text = string.Format($"還剩{intNeed}個數字需要選擇");
@@ -358,28 +373,17 @@ namespace asm5
 
                 }
                 
-                foreach (int myint in listWin)
-                {
-                    Console.Write(myint + " ");
-                }
-                Console.WriteLine();
-                foreach (int myint in listPlay)
-                {
-                    Console.Write(myint + " ");
-                }
-                Console.WriteLine("中了" + listGet.Count);
-
-                //把form1的資料傳到form2 ：在form2寫方法，在form1呼叫方法傳遞變數
-                //顯示中獎號碼，玩家選擇號碼，中了幾個數字(listWin listPlay getCount)
-                //form2 的按鈕物件可以自動產生
-
-                //this.Controls.Add
-
-
-
-
-
-                
+                //foreach (int myint in listWin)
+                //{
+                //    Console.Write(myint + " ");
+                //}
+                //Console.WriteLine();
+                //foreach (int myint in listPlay)
+                //{
+                //    Console.Write(myint + " ");
+                //}
+                //Console.WriteLine("中了" + listGet.Count);
+        
                 this.Hide(); //隱藏父視窗
                 Form2 form2 = new Form2(); //創建子視窗
                 form2.Set(listWin,listPlay,listGet);
@@ -397,6 +401,45 @@ namespace asm5
             }
             
 
+        }
+
+        public void reset()
+        {
+            for (int i = 0; i < comboxStar.SelectedIndex; i++)
+            {
+                listselect[i].Hide();
+            }
+            comboxStar.SelectedIndex = -1;
+            comboxStar.Text = "--請選擇星數--";
+
+            var rand = new Random();  //宣告為類別變數無用(?)
+            for (int i = 0; i < 20; i++)
+            {
+                string mystr = "";
+                while (true)
+                {
+                    mystr = rand.Next(1, 81).ToString();
+                    if (listWin.IndexOf(Convert.ToInt32(mystr)) == -1)
+                    {
+                        break;
+                    }
+                }
+                listWin[i] = Convert.ToInt32(mystr);
+            }
+            for (int i = 0; i < 80; i++)
+            {
+                if (listButton[i].BackColor == Color.Gray)
+                {
+                    //怪怪的，不給回最初的顏色
+                    listButton[i].BackColor = Button.DefaultBackColor;
+                }
+            }
+            listPlay.Clear();
+            lblNumLeft.Text = "";
+            btnEnter.Text = "確定";
+            btnCheck.Hide();
+            intNeed = 0;
+            isEnterClick = false;
         }
     }
 }

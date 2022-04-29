@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace asm5
 {
@@ -39,7 +40,10 @@ namespace asm5
                 }
                 lbl.TextAlign = ContentAlignment.MiddleCenter;
                 lbl.Size = new Size(30, 30);
-                lbl.Location = new Point(30+(i%10)*40, 30+(i/10)*40);
+                GraphicsPath Circle = new GraphicsPath();
+                Circle.AddEllipse(0,0,30,30);
+                lbl.Region = new Region(Circle);
+                lbl.Location = new Point(30+(i%10)*40, 60+(i/10)*40);
                 Controls.Add(lbl);
             }
            
@@ -58,10 +62,50 @@ namespace asm5
                 
                 lbl.TextAlign = ContentAlignment.MiddleCenter;
                 lbl.Size = new Size(30, 30);
-                lbl.Location = new Point(30 + (i % 10) * 40, 150);
+                GraphicsPath Circle = new GraphicsPath();
+                Circle.AddEllipse(0, 0, 30, 30);
+                lbl.Region = new Region(Circle);
+                lbl.Location = new Point(30 + (i % 10) * 40, 180);
                 Controls.Add(lbl);
             }
             lblShowGet.Text = string.Format($"您中了{get.Count}個!!!");
+            switch (get.Count) 
+            {
+                case 0:
+                    pic1.Image = Properties.Resources._0;
+                    break;
+                case 1:
+                    pic1.Image = Properties.Resources._1;
+                    break;
+                case 2:
+                    pic1.Image = Properties.Resources._2;
+                    break;
+                case 3:
+                    pic1.Image = Properties.Resources._3;
+                    break;
+                case 4:
+                    pic1.Image = Properties.Resources._4;
+                    break;
+                case 5:
+                    pic1.Image = Properties.Resources._5;
+                    break;
+                case 6:
+                    pic1.Image = Properties.Resources._6;
+                    break;
+                case 7:
+                    pic1.Image = Properties.Resources._7;
+                    break;
+                case 8:
+                    pic1.Image = Properties.Resources._8;
+                    break;
+                case 9:
+                    pic1.Image = Properties.Resources._9;
+                    break;
+                case 10:
+                    pic1.Image = Properties.Resources._10;
+                    break;
+
+            }
         }
 
         bool IsToForm1 = false;
@@ -79,6 +123,7 @@ namespace asm5
                 this.DialogResult = DialogResult.Yes; //利用DialogResult傳遞訊息
                 Form1 form1 = (Form1)this.Owner; //取得父視窗的參考
                 //form1.SetTextBox(textBox2.Text); //將Form2中textBox的資料透過公開方法傳遞給Form1
+                form1.reset();
             }
             else
             {

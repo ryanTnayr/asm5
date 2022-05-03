@@ -257,6 +257,7 @@ namespace asm5
             this.btn19.TabIndex = 21;
             this.btn19.Text = "19";
             this.btn19.UseVisualStyleBackColor = true;
+            this.btn19.Click += new System.EventHandler(this.btn19_Click);
             // 
             // btn20
             // 
@@ -266,6 +267,7 @@ namespace asm5
             this.btn20.TabIndex = 20;
             this.btn20.Text = "20";
             this.btn20.UseVisualStyleBackColor = true;
+            this.btn20.Click += new System.EventHandler(this.btn20_Click);
             // 
             // btn18
             // 
@@ -275,6 +277,7 @@ namespace asm5
             this.btn18.TabIndex = 19;
             this.btn18.Text = "18";
             this.btn18.UseVisualStyleBackColor = true;
+            this.btn18.Click += new System.EventHandler(this.btn18_Click);
             // 
             // btn17
             // 
@@ -284,6 +287,7 @@ namespace asm5
             this.btn17.TabIndex = 18;
             this.btn17.Text = "17";
             this.btn17.UseVisualStyleBackColor = true;
+            this.btn17.Click += new System.EventHandler(this.btn17_Click);
             // 
             // btn16
             // 
@@ -293,6 +297,7 @@ namespace asm5
             this.btn16.TabIndex = 17;
             this.btn16.Text = "16";
             this.btn16.UseVisualStyleBackColor = true;
+            this.btn16.Click += new System.EventHandler(this.btn16_Click);
             // 
             // btn14
             // 
@@ -302,6 +307,7 @@ namespace asm5
             this.btn14.TabIndex = 16;
             this.btn14.Text = "14";
             this.btn14.UseVisualStyleBackColor = true;
+            this.btn14.Click += new System.EventHandler(this.btn14_Click);
             // 
             // btn15
             // 
@@ -311,6 +317,7 @@ namespace asm5
             this.btn15.TabIndex = 15;
             this.btn15.Text = "15";
             this.btn15.UseVisualStyleBackColor = true;
+            this.btn15.Click += new System.EventHandler(this.btn15_Click);
             // 
             // btn13
             // 
@@ -320,6 +327,7 @@ namespace asm5
             this.btn13.TabIndex = 14;
             this.btn13.Text = "13";
             this.btn13.UseVisualStyleBackColor = true;
+            this.btn13.Click += new System.EventHandler(this.btn13_Click);
             // 
             // btn12
             // 
@@ -329,6 +337,7 @@ namespace asm5
             this.btn12.TabIndex = 13;
             this.btn12.Text = "12";
             this.btn12.UseVisualStyleBackColor = true;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
             // 
             // btn11
             // 
@@ -338,6 +347,7 @@ namespace asm5
             this.btn11.TabIndex = 12;
             this.btn11.Text = "11";
             this.btn11.UseVisualStyleBackColor = true;
+            this.btn11.Click += new System.EventHandler(this.btn11_Click);
             // 
             // btn39
             // 
@@ -347,6 +357,7 @@ namespace asm5
             this.btn39.TabIndex = 41;
             this.btn39.Text = "39";
             this.btn39.UseVisualStyleBackColor = true;
+            this.btn39.Click += new System.EventHandler(this.btn39_Click);
             // 
             // btn40
             // 
@@ -356,6 +367,7 @@ namespace asm5
             this.btn40.TabIndex = 40;
             this.btn40.Text = "40";
             this.btn40.UseVisualStyleBackColor = true;
+            this.btn40.Click += new System.EventHandler(this.btn40_Click);
             // 
             // btn38
             // 
@@ -365,6 +377,7 @@ namespace asm5
             this.btn38.TabIndex = 39;
             this.btn38.Text = "38";
             this.btn38.UseVisualStyleBackColor = true;
+            this.btn38.Click += new System.EventHandler(this.btn38_Click);
             // 
             // btn37
             // 
@@ -374,6 +387,7 @@ namespace asm5
             this.btn37.TabIndex = 38;
             this.btn37.Text = "37";
             this.btn37.UseVisualStyleBackColor = true;
+            this.btn37.Click += new System.EventHandler(this.btn37_Click);
             // 
             // btn36
             // 
@@ -383,6 +397,7 @@ namespace asm5
             this.btn36.TabIndex = 37;
             this.btn36.Text = "36";
             this.btn36.UseVisualStyleBackColor = true;
+            this.btn36.Click += new System.EventHandler(this.btn36_Click);
             // 
             // btn34
             // 
@@ -392,6 +407,7 @@ namespace asm5
             this.btn34.TabIndex = 36;
             this.btn34.Text = "34";
             this.btn34.UseVisualStyleBackColor = true;
+            this.btn34.Click += new System.EventHandler(this.btn34_Click);
             // 
             // btn35
             // 
@@ -401,6 +417,7 @@ namespace asm5
             this.btn35.TabIndex = 35;
             this.btn35.Text = "35";
             this.btn35.UseVisualStyleBackColor = true;
+            this.btn35.Click += new System.EventHandler(this.btn35_Click);
             // 
             // btn33
             // 
@@ -410,6 +427,7 @@ namespace asm5
             this.btn33.TabIndex = 34;
             this.btn33.Text = "33";
             this.btn33.UseVisualStyleBackColor = true;
+            this.btn33.Click += new System.EventHandler(this.btn33_Click);
             // 
             // btn32
             // 
@@ -419,6 +437,7 @@ namespace asm5
             this.btn32.TabIndex = 33;
             this.btn32.Text = "32";
             this.btn32.UseVisualStyleBackColor = true;
+            this.btn32.Click += new System.EventHandler(this.btn32_Click);
             // 
             // btn31
             // 
@@ -428,6 +447,7 @@ namespace asm5
             this.btn31.TabIndex = 32;
             this.btn31.Text = "31";
             this.btn31.UseVisualStyleBackColor = true;
+            this.btn31.Click += new System.EventHandler(this.btn31_Click);
             // 
             // btn29
             // 
@@ -437,6 +457,7 @@ namespace asm5
             this.btn29.TabIndex = 31;
             this.btn29.Text = "29";
             this.btn29.UseVisualStyleBackColor = true;
+            this.btn29.Click += new System.EventHandler(this.btn29_Click);
             // 
             // btn30
             // 
@@ -446,6 +467,7 @@ namespace asm5
             this.btn30.TabIndex = 30;
             this.btn30.Text = "30";
             this.btn30.UseVisualStyleBackColor = true;
+            this.btn30.Click += new System.EventHandler(this.btn30_Click);
             // 
             // btn28
             // 
@@ -455,6 +477,7 @@ namespace asm5
             this.btn28.TabIndex = 29;
             this.btn28.Text = "28";
             this.btn28.UseVisualStyleBackColor = true;
+            this.btn28.Click += new System.EventHandler(this.btn28_Click);
             // 
             // btn27
             // 
@@ -464,6 +487,7 @@ namespace asm5
             this.btn27.TabIndex = 28;
             this.btn27.Text = "27";
             this.btn27.UseVisualStyleBackColor = true;
+            this.btn27.Click += new System.EventHandler(this.btn27_Click);
             // 
             // btn26
             // 
@@ -473,6 +497,7 @@ namespace asm5
             this.btn26.TabIndex = 27;
             this.btn26.Text = "26";
             this.btn26.UseVisualStyleBackColor = true;
+            this.btn26.Click += new System.EventHandler(this.btn26_Click);
             // 
             // btn24
             // 
@@ -482,6 +507,7 @@ namespace asm5
             this.btn24.TabIndex = 26;
             this.btn24.Text = "24";
             this.btn24.UseVisualStyleBackColor = true;
+            this.btn24.Click += new System.EventHandler(this.btn24_Click);
             // 
             // btn25
             // 
@@ -491,6 +517,7 @@ namespace asm5
             this.btn25.TabIndex = 25;
             this.btn25.Text = "25";
             this.btn25.UseVisualStyleBackColor = true;
+            this.btn25.Click += new System.EventHandler(this.btn25_Click);
             // 
             // btn23
             // 
@@ -500,6 +527,7 @@ namespace asm5
             this.btn23.TabIndex = 24;
             this.btn23.Text = "23";
             this.btn23.UseVisualStyleBackColor = true;
+            this.btn23.Click += new System.EventHandler(this.btn23_Click);
             // 
             // btn22
             // 
@@ -509,6 +537,7 @@ namespace asm5
             this.btn22.TabIndex = 23;
             this.btn22.Text = "22";
             this.btn22.UseVisualStyleBackColor = true;
+            this.btn22.Click += new System.EventHandler(this.btn22_Click);
             // 
             // btn21
             // 
@@ -518,6 +547,7 @@ namespace asm5
             this.btn21.TabIndex = 22;
             this.btn21.Text = "21";
             this.btn21.UseVisualStyleBackColor = true;
+            this.btn21.Click += new System.EventHandler(this.btn21_Click);
             // 
             // btn79
             // 
@@ -527,6 +557,7 @@ namespace asm5
             this.btn79.TabIndex = 81;
             this.btn79.Text = "79";
             this.btn79.UseVisualStyleBackColor = true;
+            this.btn79.Click += new System.EventHandler(this.btn79_Click);
             // 
             // btn80
             // 
@@ -536,6 +567,7 @@ namespace asm5
             this.btn80.TabIndex = 80;
             this.btn80.Text = "80";
             this.btn80.UseVisualStyleBackColor = true;
+            this.btn80.Click += new System.EventHandler(this.btn80_Click);
             // 
             // btn78
             // 
@@ -545,6 +577,7 @@ namespace asm5
             this.btn78.TabIndex = 79;
             this.btn78.Text = "78";
             this.btn78.UseVisualStyleBackColor = true;
+            this.btn78.Click += new System.EventHandler(this.btn78_Click);
             // 
             // btn77
             // 
@@ -554,6 +587,7 @@ namespace asm5
             this.btn77.TabIndex = 78;
             this.btn77.Text = "77";
             this.btn77.UseVisualStyleBackColor = true;
+            this.btn77.Click += new System.EventHandler(this.btn77_Click);
             // 
             // btn76
             // 
@@ -563,6 +597,7 @@ namespace asm5
             this.btn76.TabIndex = 77;
             this.btn76.Text = "76";
             this.btn76.UseVisualStyleBackColor = true;
+            this.btn76.Click += new System.EventHandler(this.btn76_Click);
             // 
             // btn74
             // 
@@ -572,6 +607,7 @@ namespace asm5
             this.btn74.TabIndex = 76;
             this.btn74.Text = "74";
             this.btn74.UseVisualStyleBackColor = true;
+            this.btn74.Click += new System.EventHandler(this.btn74_Click);
             // 
             // btn75
             // 
@@ -581,6 +617,7 @@ namespace asm5
             this.btn75.TabIndex = 75;
             this.btn75.Text = "75";
             this.btn75.UseVisualStyleBackColor = true;
+            this.btn75.Click += new System.EventHandler(this.btn75_Click);
             // 
             // btn73
             // 
@@ -590,6 +627,7 @@ namespace asm5
             this.btn73.TabIndex = 74;
             this.btn73.Text = "73";
             this.btn73.UseVisualStyleBackColor = true;
+            this.btn73.Click += new System.EventHandler(this.btn73_Click);
             // 
             // btn72
             // 
@@ -599,6 +637,7 @@ namespace asm5
             this.btn72.TabIndex = 73;
             this.btn72.Text = "72";
             this.btn72.UseVisualStyleBackColor = true;
+            this.btn72.Click += new System.EventHandler(this.btn72_Click);
             // 
             // btn71
             // 
@@ -608,6 +647,7 @@ namespace asm5
             this.btn71.TabIndex = 72;
             this.btn71.Text = "71";
             this.btn71.UseVisualStyleBackColor = true;
+            this.btn71.Click += new System.EventHandler(this.btn71_Click);
             // 
             // btn69
             // 
@@ -617,6 +657,7 @@ namespace asm5
             this.btn69.TabIndex = 71;
             this.btn69.Text = "69";
             this.btn69.UseVisualStyleBackColor = true;
+            this.btn69.Click += new System.EventHandler(this.btn69_Click);
             // 
             // btn70
             // 
@@ -626,6 +667,7 @@ namespace asm5
             this.btn70.TabIndex = 70;
             this.btn70.Text = "70";
             this.btn70.UseVisualStyleBackColor = true;
+            this.btn70.Click += new System.EventHandler(this.btn70_Click);
             // 
             // btn68
             // 
@@ -635,6 +677,7 @@ namespace asm5
             this.btn68.TabIndex = 69;
             this.btn68.Text = "68";
             this.btn68.UseVisualStyleBackColor = true;
+            this.btn68.Click += new System.EventHandler(this.btn68_Click);
             // 
             // btn67
             // 
@@ -644,6 +687,7 @@ namespace asm5
             this.btn67.TabIndex = 68;
             this.btn67.Text = "67";
             this.btn67.UseVisualStyleBackColor = true;
+            this.btn67.Click += new System.EventHandler(this.btn67_Click);
             // 
             // btn66
             // 
@@ -653,6 +697,7 @@ namespace asm5
             this.btn66.TabIndex = 67;
             this.btn66.Text = "66";
             this.btn66.UseVisualStyleBackColor = true;
+            this.btn66.Click += new System.EventHandler(this.btn66_Click);
             // 
             // btn64
             // 
@@ -662,6 +707,7 @@ namespace asm5
             this.btn64.TabIndex = 66;
             this.btn64.Text = "64";
             this.btn64.UseVisualStyleBackColor = true;
+            this.btn64.Click += new System.EventHandler(this.btn64_Click);
             // 
             // btn65
             // 
@@ -671,6 +717,7 @@ namespace asm5
             this.btn65.TabIndex = 65;
             this.btn65.Text = "65";
             this.btn65.UseVisualStyleBackColor = true;
+            this.btn65.Click += new System.EventHandler(this.btn65_Click);
             // 
             // btn63
             // 
@@ -680,6 +727,7 @@ namespace asm5
             this.btn63.TabIndex = 64;
             this.btn63.Text = "63";
             this.btn63.UseVisualStyleBackColor = true;
+            this.btn63.Click += new System.EventHandler(this.btn63_Click);
             // 
             // btn62
             // 
@@ -689,6 +737,7 @@ namespace asm5
             this.btn62.TabIndex = 63;
             this.btn62.Text = "62";
             this.btn62.UseVisualStyleBackColor = true;
+            this.btn62.Click += new System.EventHandler(this.btn62_Click);
             // 
             // btn61
             // 
@@ -698,6 +747,7 @@ namespace asm5
             this.btn61.TabIndex = 62;
             this.btn61.Text = "61";
             this.btn61.UseVisualStyleBackColor = true;
+            this.btn61.Click += new System.EventHandler(this.btn61_Click);
             // 
             // btn59
             // 
@@ -707,6 +757,7 @@ namespace asm5
             this.btn59.TabIndex = 61;
             this.btn59.Text = "59";
             this.btn59.UseVisualStyleBackColor = true;
+            this.btn59.Click += new System.EventHandler(this.btn59_Click);
             // 
             // btn60
             // 
@@ -716,6 +767,7 @@ namespace asm5
             this.btn60.TabIndex = 60;
             this.btn60.Text = "60";
             this.btn60.UseVisualStyleBackColor = true;
+            this.btn60.Click += new System.EventHandler(this.btn60_Click);
             // 
             // btn58
             // 
@@ -725,6 +777,7 @@ namespace asm5
             this.btn58.TabIndex = 59;
             this.btn58.Text = "58";
             this.btn58.UseVisualStyleBackColor = true;
+            this.btn58.Click += new System.EventHandler(this.btn58_Click);
             // 
             // btn57
             // 
@@ -734,6 +787,7 @@ namespace asm5
             this.btn57.TabIndex = 58;
             this.btn57.Text = "57";
             this.btn57.UseVisualStyleBackColor = true;
+            this.btn57.Click += new System.EventHandler(this.btn57_Click);
             // 
             // btn56
             // 
@@ -743,6 +797,7 @@ namespace asm5
             this.btn56.TabIndex = 57;
             this.btn56.Text = "56";
             this.btn56.UseVisualStyleBackColor = true;
+            this.btn56.Click += new System.EventHandler(this.btn56_Click);
             // 
             // btn54
             // 
@@ -752,6 +807,7 @@ namespace asm5
             this.btn54.TabIndex = 56;
             this.btn54.Text = "54";
             this.btn54.UseVisualStyleBackColor = true;
+            this.btn54.Click += new System.EventHandler(this.btn54_Click);
             // 
             // btn55
             // 
@@ -761,6 +817,7 @@ namespace asm5
             this.btn55.TabIndex = 55;
             this.btn55.Text = "55";
             this.btn55.UseVisualStyleBackColor = true;
+            this.btn55.Click += new System.EventHandler(this.btn55_Click);
             // 
             // btn53
             // 
@@ -770,6 +827,7 @@ namespace asm5
             this.btn53.TabIndex = 54;
             this.btn53.Text = "53";
             this.btn53.UseVisualStyleBackColor = true;
+            this.btn53.Click += new System.EventHandler(this.btn53_Click);
             // 
             // btn52
             // 
@@ -779,6 +837,7 @@ namespace asm5
             this.btn52.TabIndex = 53;
             this.btn52.Text = "52";
             this.btn52.UseVisualStyleBackColor = true;
+            this.btn52.Click += new System.EventHandler(this.btn52_Click);
             // 
             // btn51
             // 
@@ -788,6 +847,7 @@ namespace asm5
             this.btn51.TabIndex = 52;
             this.btn51.Text = "51";
             this.btn51.UseVisualStyleBackColor = true;
+            this.btn51.Click += new System.EventHandler(this.btn51_Click);
             // 
             // btn49
             // 
@@ -797,6 +857,7 @@ namespace asm5
             this.btn49.TabIndex = 51;
             this.btn49.Text = "49";
             this.btn49.UseVisualStyleBackColor = true;
+            this.btn49.Click += new System.EventHandler(this.btn49_Click);
             // 
             // btn50
             // 
@@ -806,6 +867,7 @@ namespace asm5
             this.btn50.TabIndex = 50;
             this.btn50.Text = "50";
             this.btn50.UseVisualStyleBackColor = true;
+            this.btn50.Click += new System.EventHandler(this.btn50_Click);
             // 
             // btn48
             // 
@@ -815,6 +877,7 @@ namespace asm5
             this.btn48.TabIndex = 49;
             this.btn48.Text = "48";
             this.btn48.UseVisualStyleBackColor = true;
+            this.btn48.Click += new System.EventHandler(this.btn48_Click);
             // 
             // btn47
             // 
@@ -824,6 +887,7 @@ namespace asm5
             this.btn47.TabIndex = 48;
             this.btn47.Text = "47";
             this.btn47.UseVisualStyleBackColor = true;
+            this.btn47.Click += new System.EventHandler(this.btn47_Click);
             // 
             // btn46
             // 
@@ -833,6 +897,7 @@ namespace asm5
             this.btn46.TabIndex = 47;
             this.btn46.Text = "46";
             this.btn46.UseVisualStyleBackColor = true;
+            this.btn46.Click += new System.EventHandler(this.btn46_Click);
             // 
             // btn44
             // 
@@ -842,6 +907,7 @@ namespace asm5
             this.btn44.TabIndex = 46;
             this.btn44.Text = "44";
             this.btn44.UseVisualStyleBackColor = true;
+            this.btn44.Click += new System.EventHandler(this.btn44_Click);
             // 
             // btn45
             // 
@@ -851,6 +917,7 @@ namespace asm5
             this.btn45.TabIndex = 45;
             this.btn45.Text = "45";
             this.btn45.UseVisualStyleBackColor = true;
+            this.btn45.Click += new System.EventHandler(this.btn45_Click);
             // 
             // btn43
             // 
@@ -860,6 +927,7 @@ namespace asm5
             this.btn43.TabIndex = 44;
             this.btn43.Text = "43";
             this.btn43.UseVisualStyleBackColor = true;
+            this.btn43.Click += new System.EventHandler(this.btn43_Click);
             // 
             // btn42
             // 
@@ -869,6 +937,7 @@ namespace asm5
             this.btn42.TabIndex = 43;
             this.btn42.Text = "42";
             this.btn42.UseVisualStyleBackColor = true;
+            this.btn42.Click += new System.EventHandler(this.btn42_Click);
             // 
             // btn41
             // 
@@ -878,6 +947,7 @@ namespace asm5
             this.btn41.TabIndex = 42;
             this.btn41.Text = "41";
             this.btn41.UseVisualStyleBackColor = true;
+            this.btn41.Click += new System.EventHandler(this.btn41_Click);
             // 
             // lbl猜大小
             // 

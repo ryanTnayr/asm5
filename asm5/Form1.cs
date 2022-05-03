@@ -441,6 +441,356 @@ namespace asm5
             intNeed = 0;
             isEnterClick = false;
         }
+
+        private void btn11_Click(object sender, EventArgs e)
+        {
+            pickNum(btn11);
+        }
+
+        private void btn12_Click(object sender, EventArgs e)
+        {
+            pickNum(btn12);
+        }
+
+        private void btn13_Click(object sender, EventArgs e)
+        {
+            pickNum(btn13);
+        }
+
+        private void btn14_Click(object sender, EventArgs e)
+        {
+            pickNum(btn14);
+        }
+
+        private void btn15_Click(object sender, EventArgs e)
+        {
+            pickNum(btn15);
+        }
+
+        private void btn16_Click(object sender, EventArgs e)
+        {
+            pickNum(btn16);
+        }
+
+        private void btn17_Click(object sender, EventArgs e)
+        {
+            pickNum(btn17);
+        }
+
+        private void btn18_Click(object sender, EventArgs e)
+        {
+            pickNum(btn18);
+        }
+
+        private void btn19_Click(object sender, EventArgs e)
+        {
+            pickNum(btn19);
+        }
+
+        private void btn20_Click(object sender, EventArgs e)
+        {
+            pickNum(btn20);
+        }
+
+        private void btn21_Click(object sender, EventArgs e)
+        {
+            pickNum(btn21);
+        }
+
+        private void btn22_Click(object sender, EventArgs e)
+        {
+            pickNum(btn22);
+        }
+
+        private void btn23_Click(object sender, EventArgs e)
+        {
+            pickNum(btn23);
+        }
+
+        private void btn24_Click(object sender, EventArgs e)
+        {
+            pickNum(btn24);
+        }
+
+        private void btn25_Click(object sender, EventArgs e)
+        {
+            pickNum(btn25);
+        }
+
+        private void btn26_Click(object sender, EventArgs e)
+        {
+            pickNum(btn26);
+        }
+
+        private void btn27_Click(object sender, EventArgs e)
+        {
+            pickNum(btn27);
+        }
+
+        private void btn28_Click(object sender, EventArgs e)
+        {
+            pickNum(btn28);
+        }
+
+        private void btn29_Click(object sender, EventArgs e)
+        {
+            pickNum(btn29);
+        }
+
+        private void btn30_Click(object sender, EventArgs e)
+        {
+            pickNum(btn30);
+        }
+
+        private void btn31_Click(object sender, EventArgs e)
+        {
+            pickNum(btn31);
+        }
+
+        private void btn32_Click(object sender, EventArgs e)
+        {
+            pickNum(btn32);
+        }
+
+        private void btn33_Click(object sender, EventArgs e)
+        {
+            pickNum(btn33);
+        }
+
+        private void btn34_Click(object sender, EventArgs e)
+        {
+            pickNum(btn34);
+        }
+
+        private void btn35_Click(object sender, EventArgs e)
+        {
+            pickNum(btn35);
+        }
+
+        private void btn36_Click(object sender, EventArgs e)
+        {
+            pickNum(btn36);
+        }
+
+        private void btn37_Click(object sender, EventArgs e)
+        {
+            pickNum(btn37);
+        }
+
+        private void btn38_Click(object sender, EventArgs e)
+        {
+            pickNum(btn38);
+        }
+
+        private void btn39_Click(object sender, EventArgs e)
+        {
+            pickNum(btn39);
+        }
+
+        private void btn40_Click(object sender, EventArgs e)
+        {
+            pickNum(btn40);
+        }
+
+        private void btn41_Click(object sender, EventArgs e)
+        {
+            pickNum(btn41);
+        }
+
+        private void btn42_Click(object sender, EventArgs e)
+        {
+            pickNum(btn42);
+        }
+
+        private void btn43_Click(object sender, EventArgs e)
+        {
+            pickNum(btn43);
+        }
+
+        private void btn44_Click(object sender, EventArgs e)
+        {
+            pickNum(btn44);
+        }
+
+        private void btn45_Click(object sender, EventArgs e)
+        {
+            pickNum(btn45);
+        }
+
+        private void btn46_Click(object sender, EventArgs e)
+        {
+            pickNum(btn46);
+        }
+
+        private void btn47_Click(object sender, EventArgs e)
+        {
+            pickNum(btn47);
+        }
+
+        private void btn48_Click(object sender, EventArgs e)
+        {
+            pickNum(btn48);
+        }
+
+        private void btn49_Click(object sender, EventArgs e)
+        {
+            pickNum(btn49);
+        }
+
+        private void btn50_Click(object sender, EventArgs e)
+        {
+            pickNum(btn50);
+        }
+
+        private void btn51_Click(object sender, EventArgs e)
+        {
+            pickNum(btn51);
+        }
+
+        private void btn52_Click(object sender, EventArgs e)
+        {
+            pickNum(btn52);
+        }
+
+        private void btn53_Click(object sender, EventArgs e)
+        {
+            pickNum(btn53);
+        }
+
+        private void btn54_Click(object sender, EventArgs e)
+        {
+            pickNum(btn54);
+        }
+
+        private void btn55_Click(object sender, EventArgs e)
+        {
+            pickNum(btn55);
+        }
+
+        private void btn56_Click(object sender, EventArgs e)
+        {
+            pickNum(btn56);
+        }
+
+        private void btn57_Click(object sender, EventArgs e)
+        {
+            pickNum(btn57);
+        }
+
+        private void btn58_Click(object sender, EventArgs e)
+        {
+            pickNum(btn58);
+        }
+
+        private void btn59_Click(object sender, EventArgs e)
+        {
+            pickNum(btn59);
+        }
+
+        private void btn60_Click(object sender, EventArgs e)
+        {
+            pickNum(btn60);
+        }
+
+        private void btn61_Click(object sender, EventArgs e)
+        {
+            pickNum(btn61);
+        }
+
+        private void btn62_Click(object sender, EventArgs e)
+        {
+            pickNum(btn62);
+        }
+
+        private void btn63_Click(object sender, EventArgs e)
+        {
+            pickNum(btn63);
+        }
+
+        private void btn64_Click(object sender, EventArgs e)
+        {
+            pickNum(btn64);
+        }
+
+        private void btn65_Click(object sender, EventArgs e)
+        {
+            pickNum(btn65);
+        }
+
+        private void btn66_Click(object sender, EventArgs e)
+        {
+            pickNum(btn66);
+        }
+
+        private void btn67_Click(object sender, EventArgs e)
+        {
+            pickNum(btn67);
+        }
+
+        private void btn68_Click(object sender, EventArgs e)
+        {
+            pickNum(btn68);
+        }
+
+        private void btn69_Click(object sender, EventArgs e)
+        {
+            pickNum(btn69);
+        }
+
+        private void btn70_Click(object sender, EventArgs e)
+        {
+            pickNum(btn70);
+        }
+
+        private void btn71_Click(object sender, EventArgs e)
+        {
+            pickNum(btn71);
+        }
+
+        private void btn72_Click(object sender, EventArgs e)
+        {
+            pickNum(btn72);
+        }
+
+        private void btn73_Click(object sender, EventArgs e)
+        {
+            pickNum(btn73);
+        }
+
+        private void btn74_Click(object sender, EventArgs e)
+        {
+            pickNum(btn74);
+        }
+
+        private void btn75_Click(object sender, EventArgs e)
+        {
+            pickNum(btn75);
+        }
+
+        private void btn76_Click(object sender, EventArgs e)
+        {
+            pickNum(btn76);
+        }
+
+        private void btn77_Click(object sender, EventArgs e)
+        {
+            pickNum(btn77);
+        }
+
+        private void btn78_Click(object sender, EventArgs e)
+        {
+            pickNum(btn78);
+        }
+
+        private void btn79_Click(object sender, EventArgs e)
+        {
+            pickNum(btn79);
+        }
+
+        private void btn80_Click(object sender, EventArgs e)
+        {
+            pickNum(btn80);
+        }
     }
 }
     

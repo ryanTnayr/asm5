@@ -26,13 +26,12 @@ namespace asm5
 
         public void Set(List<int> mywin, List<int> myplay, List<int> get)
         {
-
+            //產生中獎號碼
             for (int i = 0; i < 20; i++)
             {
                 Label lbl = new Label();
                 lbl.Name = "lblWin" + i;
                 lbl.Text = string.Format($"{mywin[i]}");
-                //lbl.Visible = true;
                 lbl.BackColor = Color.Yellow;
                 if (myplay.IndexOf(mywin[i]) != -1)
                 {
@@ -46,7 +45,7 @@ namespace asm5
                 lbl.Location = new Point(30+(i%10)*40, 60+(i/10)*40);
                 Controls.Add(lbl);
             }
-           
+           //產生選擇號碼
             for(int i = 0; i < myplay.Count; i++)
             {
                 Label lbl = new Label();
@@ -58,8 +57,6 @@ namespace asm5
                     
                 lbl.Name = "lblPlay" + i;
                 lbl.Text = string.Format($"{myplay[i]}");
-                //lbl.Visible = true;
-                
                 lbl.TextAlign = ContentAlignment.MiddleCenter;
                 lbl.Size = new Size(30, 30);
                 GraphicsPath Circle = new GraphicsPath();
@@ -122,7 +119,6 @@ namespace asm5
             {
                 this.DialogResult = DialogResult.Yes; //利用DialogResult傳遞訊息
                 Form1 form1 = (Form1)this.Owner; //取得父視窗的參考
-                //form1.SetTextBox(textBox2.Text); //將Form2中textBox的資料透過公開方法傳遞給Form1
                 form1.reset();
             }
             else

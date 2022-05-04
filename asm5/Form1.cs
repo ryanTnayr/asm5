@@ -13,20 +13,17 @@ namespace asm5
 {
     /*
      * 尚未完成功能：
-     * 1. 按鍵圖形化
-     * 2. 不同form傳遞資料 OK
-     * 3. 按鍵自動化生成  OK
-     * 4. 再來一場(清除先前選擇、重新產生新兌獎數字) 
-     * 5. 不同獎顯示不同圖片  OK
-     * 6. 將對中的數字變顏色 OK
-     * 
+
      * 技術：
      * 1. 按鈕陣列化，方便使用
      * 2. 無限迴圈檢查數字有無重複
      * 3. 利用 combobox.SelectedIndex 控制 for 迴圈數
      * 4. 利用 bool 控制按鍵是否作用
      * 5. 按下按鍵後，顯示其他按鍵
-     * 6. 跳出新 form ，並自動生成按鍵
+     * 6. 跳出新 form ，並可以跳回原本form
+     * 7. 自動生成按鍵
+     * 7. 產生圓形按鈕
+     * 8. 不同form傳遞資料
      * 
      * 功能：
      * 1. 下拉式選單，未選擇會跳提醒視窗
@@ -35,7 +32,10 @@ namespace asm5
      * 4. 當玩家想超選，會跳提醒視窗
      * 5. 玩家確定後，鎖住其他按鍵，清除後，解除鎖定
      * 6. 幫玩家自動選擇全部數字或剩餘數字
-     * 7. 兌獎後，跳出新視窗，並返回上一頁
+     * 7. 兌獎後，跳出新視窗
+     * 8. 不同獎顯示不同圖片
+     * 9. 將兌中的號碼變顏色
+     * 10.可以再來一場
      */
 
     
@@ -124,14 +124,11 @@ namespace asm5
                 //2.改選擇陣列
                 //3.改待選陣列
 
-
-
                 //請玩家輸入號碼  OK
 
                 //選擇完數字要讓使用者不能再選  OK
 
                 //按鍵輸入，按下時顏色改變  OK
-
 
                 //比對數字 OK
 
@@ -142,11 +139,9 @@ namespace asm5
 
                 //將數字排序輸出 OK
 
-                //猜大小
+                //顯示中獎 OK
 
-                //顯示中獎
-
-                //再來一局
+                //再來一局 OK
             }
         }
 
@@ -169,10 +164,6 @@ namespace asm5
                         button.BackColor = Color.Gray;
                         intNeed -= 1;
                         lblNumLeft.Text = string.Format($"還剩{intNeed}個數字需要選擇");
-                        //foreach (string str in listPlay)
-                        //{
-                        //    Console.Write(str);
-                        //}
                     }
                     else if (button.BackColor != Color.Gray && listPlay.Count == comboxStar.SelectedIndex)
                     {
@@ -180,9 +171,6 @@ namespace asm5
                     }
                     else
                     {
-                        //把listPlay 中的數字刪除
-                        //把顏色變回原本顏色
-                        //intNeed也要加一
                         listPlay.Remove(Convert.ToInt32(button.Text));
                         button.BackColor = Button.DefaultBackColor;
                         intNeed += 1;
@@ -206,14 +194,14 @@ namespace asm5
         {
             if (btnEnter.Text=="確定")
             {
-                btnCheck.Show();
-                isEnterClick = true;
                 if (listPlay.Count != comboxStar.SelectedIndex)
                 {
                     MessageBox.Show($"還剩{intNeed}個數字需要選擇");
                 }
                 else
                 {
+                    btnCheck.Show();
+                    isEnterClick = true;
                     listPlay.Sort();
                     btnEnter.Text = "解除確定";
                     for (int i = 0; i < comboxStar.SelectedIndex; i++)
@@ -289,7 +277,11 @@ namespace asm5
             btnEnter.Text = "確定";
             listPlay = new List<int> { } ;       
             intNeed = comboxStar.SelectedIndex;
-            lblNumLeft.Text = string.Format($"還剩{intNeed}個數字需要選擇");
+            if (intNeed != -1)
+            {
+                lblNumLeft.Text = string.Format($"還剩{intNeed}個數字需要選擇");
+            }
+            
             for (int i = 0; i < 80;i++)
             {
                 if (listButton[i].BackColor == Color.Gray)
@@ -372,18 +364,7 @@ namespace asm5
                     }
 
                 }
-                
-                //foreach (int myint in listWin)
-                //{
-                //    Console.Write(myint + " ");
-                //}
-                //Console.WriteLine();
-                //foreach (int myint in listPlay)
-                //{
-                //    Console.Write(myint + " ");
-                //}
-                //Console.WriteLine("中了" + listGet.Count);
-        
+
                 this.Hide(); //隱藏父視窗
                 Form2 form2 = new Form2(); //創建子視窗
                 form2.Set(listWin,listPlay,listGet);
